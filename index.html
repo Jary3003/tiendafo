@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos de Redes Informáticas</title>
+    <style>
+        :root {
+            --primary-color: #0056b3;
+            --secondary-color: #f4f7f6;
+            --text-color: #333;
+            --card-bg: #fff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--secondary-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 2rem auto;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            color: var(--primary-color);
+            margin-bottom: 2rem;
+            font-size: 2rem;
+            border-bottom: 2px solid var(--primary-color);
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        .content-card {
+            background: var(--card-bg);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+            margin-bottom: 3rem;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .content-card img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            border-bottom: 3px solid var(--primary-color);
+        }
+
+        .card-body {
+            padding: 2rem;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 1rem;
+        }
+
+        .grid-item {
+            background-color: var(--secondary-color);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--primary-color);
+        }
+
+        .grid-item h3 {
+            color: var(--primary-color);
+            margin-top: 0;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 3rem;
+        }
+
+        @media (min-width: 768px) {
+            .content-card.reverse {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Conceptos de Redes Informáticas</h1>
+        <p>Aprende los fundamentos de cómo se conectan los dispositivos en el mundo digital.</p>
+    </header>
+
+    <div class="container">
+        
+        <!-- SECCIÓN 1: Tipos de Redes -->
+        <div class="content-card">
+            <!-- Imagen generada sobre Tipos de Redes -->
+            <img src="watermarked_img_982637372428063916.jpg" alt="Ilustración de tipos de redes LAN, WAN, WLAN">
+            <div class="card-body">
+                <h2 class="section-title">Tipos de Redes</h2>
+                <p>Las redes se clasifican principalmente por su alcance geográfico y el medio de conexión que utilizan:</p>
+                
+                <div class="grid-container">
+                    <div class="grid-item">
+                        <h3>LAN (Local Area Network)</h3>
+                        <p>Red de área local. Conecta ordenadores y dispositivos dentro de un área geográfica pequeña, como una casa, oficina o escuela. Suelen ser rápidas y muy seguras.</p>
+                    </div>
+                    <div class="grid-item">
+                        <h3>WAN (Wide Area Network)</h3>
+                        <p>Red de área amplia. Conecta redes LAN a través de grandes distancias geográficas (ciudades, países o continentes). El mejor ejemplo de una red WAN es el propio Internet.</p>
+                    </div>
+                    <div class="grid-item">
+                        <h3>WLAN (Wireless LAN)</h3>
+                        <p>Es una red de área local pero inalámbrica. Utiliza tecnología de radiofrecuencia (como el Wi-Fi) en lugar de cables para conectar los dispositivos de una zona local.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECCIÓN 2: Dispositivos de Red -->
+        <div class="content-card">
+            <!-- Imagen generada sobre Dispositivos de Red -->
+            <img src="watermarked_img_7868826876524043434.jpg" alt="Router, Switch y Access Point en un escritorio">
+            <div class="card-body">
+                <h2 class="section-title">Dispositivos de Red</h2>
+                <p>Para que una red funcione, necesita hardware especializado que dirija y gestione el tráfico de datos. Aquí están los más importantes:</p>
+                
+                <div class="grid-container">
+                    <div class="grid-item">
+                        <h3>Router (Enrutador)</h3>
+                        <p>Es el "director de tráfico". Conecta múltiples redes entre sí (por ejemplo, tu red doméstica a Internet) y decide la mejor ruta para enviar los paquetes de datos a su destino.</p>
+                    </div>
+                    <div class="grid-item">
+                        <h3>Switch (Conmutador)</h3>
+                        <p>Opera dentro de una sola red (LAN). Conecta múltiples dispositivos por cable (computadoras, impresoras) y envía los datos *solo* al dispositivo específico que los necesita, haciéndolo muy eficiente.</p>
+                    </div>
+                    <div class="grid-item">
+                        <h3>Access Point (Punto de Acceso)</h3>
+                        <p>Permite que los dispositivos inalámbricos (smartphones, laptops) se conecten a una red por cable. Expande la cobertura del Wi-Fi creando una WLAN que se enlaza a la red alámbrica.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECCIÓN 3: El Servidor -->
+        <div class="content-card">
+            <!-- Imagen generada sobre el Servidor -->
+            <img src="watermarked_img_12199731797024666308.jpg" alt="Servidor moderno en un centro de datos">
+            <div class="card-body">
+                <h2 class="section-title">El Servidor</h2>
+                <p>Un servidor es una computadora de alto rendimiento, o un programa informático, que proporciona funcionalidades ("servicios") a otras computadoras o dispositivos, conocidos como "clientes".</p>
+                <p>Existen muchos tipos de servidores: <strong>servidores web</strong> (que almacenan esta misma página web para que la veas), <strong>servidores de bases de datos</strong>, <strong>servidores de correo</strong>, entre otros. Están diseñados para funcionar las 24 horas del día, los 7 días de la semana, manejando grandes cantidades de información y peticiones simultáneas.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 - Página Educativa de Redes Informáticas. Creada con HTML y CSS.</p>
+    </footer>
+
+</body>
+</html>
